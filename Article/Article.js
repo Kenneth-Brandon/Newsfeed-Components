@@ -85,6 +85,15 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Asynchronous code',
+    date: 'Dec 31st, 2018',
+    firstParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Tellus elementum sagittis vitae et leo. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Ultrices in iaculis nunc sed augue lacus viverra. Arcu cursus euismod quis viverra nibh cras. Justo nec ultrices dui sapien eget mi proin sed libero. Sed risus pretium quam vulputate dignissim suspendisse in. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Amet dictum sit amet justo donec. Amet nisl suscipit adipiscing bibendum est. Vestibulum lorem sed risus ultricies. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Iaculis nunc sed augue lacus viverra vitae. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. `,
+
+    secondParagraph: `Fringilla urna porttitor rhoncus dolor purus non enim praesent. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Tellus at urna condimentum mattis pellentesque. Amet consectetur adipiscing elit ut. Viverra adipiscing at in tellus. Sem viverra aliquet eget sit amet tellus cras. Ullamcorper sit amet risus nullam eget felis eget. Sit amet justo donec enim. Nulla porttitor massa id neque aliquam. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Eu facilisis sed odio morbi quis. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Feugiat in ante metus dictum at tempor commodo. Bibendum enim facilisis gravida neque convallis a cras. `,
+
+    thirdParagraph: `Placerat vestibulum lectus mauris ultrices eros in. Enim nunc faucibus a pellentesque sit amet. Suspendisse sed nisi lacus sed viverra tellus. Pulvinar pellentesque habitant morbi tristique senectus et. Senectus et netus et malesuada fames ac turpis egestas. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Quis varius quam quisque id diam vel. At consectetur lorem donec massa. Vel pharetra vel turpis nunc. Leo a diam sollicitudin tempor id eu nisl nunc. At volutpat diam ut venenatis tellus in metus. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Consectetur libero id faucibus nisl. Dignissim diam quis enim lobortis scelerisque. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Dolor magna eget est lorem ipsum. Arcu cursus vitae congue mauris rhoncus aenean. Mi bibendum neque egestas congue quisque egestas diam in arcu.`
   }
 ];
 
@@ -111,4 +120,60 @@ const data = [
 
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
+<div class="article">
+    <h2>{title of the article}</h2>
+    <p class="date">{date of the article}</p>
+
+    {three separate paragraph elements}
+
+    <span class='expandButton'></span>
+  </div>
+
 */
+const container = document.querySelector('.articles');
+
+ function createArticle (title, date, firstParagraph, secondParagraph, thirdParagraph) {
+   const articles = document.createElement('div');
+   const articleTitle = document.createElement('h2');
+   const articleDate = document.createElement('p');
+   const paragraphOne = document.createElement('p');
+   const paragraphTwo = document.createElement('p');
+   const paragraphThree = document.createElement('p');
+   const expandButton = document.createElement('span');
+
+//setup structure of elements
+articles.appendChild(articleTitle);
+articles.appendChild(articleDate);
+articles.appendChild(paragraphOne);
+articles.appendChild(paragraphTwo);
+articles.appendChild(paragraphThree);
+articles.appendChild(expandButton);
+
+//setup class names
+articles.classList.add('article');
+articleDate.classList.add('date');
+expandButton.classList.add('expandButton');
+
+//set text content
+articleTitle.textContent = title;
+articleDate.textContent = date;
+paragraphOne.textContent = firstParagraph;
+paragraphTwo.textContent = secondParagraph;
+paragraphThree.textContent = thirdParagraph;
+expandButton.textContent = "Read More";
+
+//event listener
+expandButton.addEventListener('click', (event) => {
+  console.log('button is clicked')
+  articles.classList.toggle('article-open');
+  articles.classList.toggle('close-article');
+});
+
+return articles
+ };
+
+ data.forEach(data => {
+   container.appendChild(createArticle(data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph))
+ });
+
+ 
