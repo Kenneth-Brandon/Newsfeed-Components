@@ -3,7 +3,7 @@
 const data = [
   {
     title: 'Lambda School Students: "We\'re the best!"',
-    date: 'Nov 5th, 2018',
+    date: "Nov 5th, 2018",
     firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
         moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
         watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
@@ -23,8 +23,8 @@ const data = [
         moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
   },
   {
-    title: 'Javascript and You, ES6',
-    date: 'May 7th, 2019',
+    title: "Javascript and You, ES6",
+    date: "May 7th, 2019",
     firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
         Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
         snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
@@ -43,8 +43,8 @@ const data = [
         sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
   },
   {
-    title: 'React vs Angular vs Vue',
-    date: 'June 7th, 2019',
+    title: "React vs Angular vs Vue",
+    date: "June 7th, 2019",
     firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
@@ -71,8 +71,8 @@ const data = [
         Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
   },
   {
-    title: 'Professional Software Development in 2019',
-    date: 'Jan 1st, 2019',
+    title: "Professional Software Development in 2019",
+    date: "Jan 1st, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -87,13 +87,22 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   },
   {
-    title: 'Asynchronous code',
-    date: 'Dec 31st, 2018',
+    title: "Asynchronous code",
+    date: "Dec 31st, 2018",
     firstParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Tellus elementum sagittis vitae et leo. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Ultrices in iaculis nunc sed augue lacus viverra. Arcu cursus euismod quis viverra nibh cras. Justo nec ultrices dui sapien eget mi proin sed libero. Sed risus pretium quam vulputate dignissim suspendisse in. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Amet dictum sit amet justo donec. Amet nisl suscipit adipiscing bibendum est. Vestibulum lorem sed risus ultricies. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Iaculis nunc sed augue lacus viverra vitae. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. `,
 
     secondParagraph: `Fringilla urna porttitor rhoncus dolor purus non enim praesent. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Tellus at urna condimentum mattis pellentesque. Amet consectetur adipiscing elit ut. Viverra adipiscing at in tellus. Sem viverra aliquet eget sit amet tellus cras. Ullamcorper sit amet risus nullam eget felis eget. Sit amet justo donec enim. Nulla porttitor massa id neque aliquam. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Eu facilisis sed odio morbi quis. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Feugiat in ante metus dictum at tempor commodo. Bibendum enim facilisis gravida neque convallis a cras. `,
 
     thirdParagraph: `Placerat vestibulum lectus mauris ultrices eros in. Enim nunc faucibus a pellentesque sit amet. Suspendisse sed nisi lacus sed viverra tellus. Pulvinar pellentesque habitant morbi tristique senectus et. Senectus et netus et malesuada fames ac turpis egestas. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Quis varius quam quisque id diam vel. At consectetur lorem donec massa. Vel pharetra vel turpis nunc. Leo a diam sollicitudin tempor id eu nisl nunc. At volutpat diam ut venenatis tellus in metus. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Consectetur libero id faucibus nisl. Dignissim diam quis enim lobortis scelerisque. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Dolor magna eget est lorem ipsum. Arcu cursus vitae congue mauris rhoncus aenean. Mi bibendum neque egestas congue quisque egestas diam in arcu.`
+  },
+  {
+    title: "I'm new here",
+    date: "Jan 21, 2020",
+    firstParagraph: `Sint nisi id adipisicing minim veniam in in reprehenderit id qui mollit. Officia cillum sit ea pariatur id ipsum reprehenderit laborum. Sit culpa deserunt sunt mollit officia adipisicing minim nisi eiusmod. Est adipisicing in commodo ex commodo ex labore. Reprehenderit proident nulla amet tempor. Non ad non laborum non est.`,
+
+    secondParagraph: `Adipisicing incididunt enim ea culpa excepteur et sunt dolor non voluptate. Aute laboris cillum ipsum tempor dolor reprehenderit. Mollit commodo cillum voluptate dolor nisi proident occaecat. Pariatur aliquip consequat laboris occaecat commodo esse officia aute labore minim consequat reprehenderit ullamco exercitation. Do proident ullamco exercitation proident qui eu ut laborum. Magna tempor consectetur incididunt velit. Anim laboris eiusmod sunt reprehenderit aliqua enim culpa in eu esse elit.`,
+
+    thirdParagraph: `Ipsum magna nulla adipisicing duis esse occaecat dolor. Incididunt aliquip proident tempor velit commodo officia deserunt mollit eu. Sunt dolor sint occaecat Lorem duis in tempor do amet elit. Aliqua culpa commodo id nostrud Lorem pariatur sit esse pariatur mollit elit. Enim cillum nulla mollit ullamco in laborum est sit reprehenderit amet veniam occaecat nisi aliquip.`
   }
 ];
 
@@ -102,78 +111,78 @@ const data = [
   <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
-
     {three separate paragraph elements}
-
     <span class='expandButton'></span>
   </div>
-
   Hint: You will need to use createElement more than once here!
-
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
-
   Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
-
   Step 3: return the entire component.
-
   Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
-
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
-
 <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
-
     {three separate paragraph elements}
-
     <span class='expandButton'></span>
   </div>
-
 */
-const container = document.querySelector('.articles');
+const container = document.querySelector(".articles");
 
- function createArticle (title, date, firstParagraph, secondParagraph, thirdParagraph) {
-   const articles = document.createElement('div');
-   const articleTitle = document.createElement('h2');
-   const articleDate = document.createElement('p');
-   const paragraphOne = document.createElement('p');
-   const paragraphTwo = document.createElement('p');
-   const paragraphThree = document.createElement('p');
-   const expandButton = document.createElement('span');
+function createArticle(
+  title,
+  date,
+  firstParagraph,
+  secondParagraph,
+  thirdParagraph
+) {
+  const articles = document.createElement("div");
+  const articleTitle = document.createElement("h2");
+  const articleDate = document.createElement("p");
+  const paragraphOne = document.createElement("p");
+  const paragraphTwo = document.createElement("p");
+  const paragraphThree = document.createElement("p");
+  const expandButton = document.createElement("span");
 
-//setup structure of elements
-articles.appendChild(articleTitle);
-articles.appendChild(articleDate);
-articles.appendChild(paragraphOne);
-articles.appendChild(paragraphTwo);
-articles.appendChild(paragraphThree);
-articles.appendChild(expandButton);
+  //setup structure of elements
+  articles.appendChild(articleTitle);
+  articles.appendChild(articleDate);
+  articles.appendChild(paragraphOne);
+  articles.appendChild(paragraphTwo);
+  articles.appendChild(paragraphThree);
+  articles.appendChild(expandButton);
 
-//setup class names
-articles.classList.add('article');
-articleDate.classList.add('date');
-expandButton.classList.add('expandButton');
+  //setup class names
+  articles.classList.add("article");
+  articleDate.classList.add("date");
+  expandButton.classList.add("expandButton");
 
-//set text content
-articleTitle.textContent = title;
-articleDate.textContent = date;
-paragraphOne.textContent = firstParagraph;
-paragraphTwo.textContent = secondParagraph;
-paragraphThree.textContent = thirdParagraph;
-expandButton.textContent = "Read More";
+  //set text content
+  articleTitle.textContent = title;
+  articleDate.textContent = date;
+  paragraphOne.textContent = firstParagraph;
+  paragraphTwo.textContent = secondParagraph;
+  paragraphThree.textContent = thirdParagraph;
+  expandButton.textContent = "Read More";
 
-//event listener
-expandButton.addEventListener('click', (event) => {
-  console.log('button is clicked')
-  articles.classList.toggle('article-open');
-  articles.classList.toggle('close-article');
+  //event listener
+  expandButton.addEventListener("click", event => {
+    console.log("button is clicked");
+    articles.classList.toggle("article-open");
+    articles.classList.toggle("close-article");
+  });
+
+  return articles;
+}
+
+data.forEach(data => {
+  container.appendChild(
+    createArticle(
+      data.title,
+      data.date,
+      data.firstParagraph,
+      data.secondParagraph,
+      data.thirdParagraph
+    )
+  );
 });
-
-return articles
- };
-
- data.forEach(data => {
-   container.appendChild(createArticle(data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph))
- });
-
- 

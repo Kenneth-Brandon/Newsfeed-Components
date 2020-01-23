@@ -1,12 +1,12 @@
 /* This is the data we will be using, study it but don't change anything, yet. */
 
 let menuItems = [
-  'Students',
-  'Faculty',
+  "Students",
+  "Faculty",
   "What's New",
-  'Tech Trends',
-  'Music',
-  'Log Out'
+  "Tech Trends",
+  "Music",
+  "Log Out"
 ];
 
 /* 
@@ -39,36 +39,49 @@ let menuItems = [
   </div>
 */
 
-const header = document.querySelector('.header');
+const header = document.querySelector(".header");
 
 function createMenu(data) {
+  const menu = document.createElement("div");
+  const menuItem = document.createElement("ul");
 
-  const menu = document.createElement('div');
-  const menuItem = document.createElement('ul');
-
-// Setup structure of elements
+  // Setup structure of elements
   header.appendChild(menu);
   menu.appendChild(menuItem);
- 
-// Set class names
-  menu.classList.add('menu');
 
- const menuButton = document.querySelector('.menu-button');
+  // Set class names
+  menu.classList.add("menu");
+
+  const menuButton = document.querySelector(".menu-button");
 
   // Event listener
-  menuButton.addEventListener('click', e => {
-    menu.classList.toggle('menu--open')
+  menuButton.addEventListener("click", e => {
+    menu.classList.toggle("menu--open");
   });
 
   data.forEach(item => {
-    const listItem = document.createElement('li');
+    const listItem = document.createElement("li");
     listItem.textContent = item;
     menuItem.appendChild(listItem);
   });
 
+  document.addEventListener("click", event => {
+    if (
+      event.target != menu &&
+      event.target != menuButton &&
+      menu.classList.contains("menu--open")
+    ) {
+      TweenMax.to(menu, 1, {
+        left: -350,
+        onComplete: () => {
+          menu.classList.toggle("menu--open");
+          menu.style.left = 0;
+        }
+      });
+    }
+  });
+
   return menu;
-};
+}
 
 header.appendChild(createMenu(menuItems));
-
-
